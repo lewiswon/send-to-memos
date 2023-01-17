@@ -1,0 +1,8 @@
+version: '3'
+services:
+  wechaty:
+    restart: unless-stopped
+    build: .
+    container_name: wechaty
+    environment:
+      - MEMOS_API=http://192.168.10.111:5230/api/memo?openId=6c2bb62a-5ca2-46a6-b210-99fc562f37a1
